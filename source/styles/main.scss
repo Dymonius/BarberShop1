@@ -1,3 +1,12 @@
-body {
-  background: green;
-}
+@import "global/variables";
+@import "global/mixins";
+@import "global/scaffolding";
+
+@import "sections/page-header";
+@import "sections/main-nav";
+@import "sections/stats";
+@import "sections/advantages";
+@import "sections/news";
+
+
+
