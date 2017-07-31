@@ -1,25 +1,27 @@
+
 body {
+
   font-size: 18px;
   line-height: 27px;
-  font-family: Arial, sans-serif;
+  font-family: 'PT Sans Narrow', Arial, sans-serif;
   color: #f7f4f1;
   font-style: normal;
-
+  margin: 0;
   background-color: $bg-darkgrey;
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
 .visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
   width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  bottom: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
 }
