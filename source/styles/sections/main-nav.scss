@@ -1,9 +1,9 @@
 .main-nav {
   position: relative;
 
-  width: 320px;
-  min-height: 51px;
-  margin: 0 auto;
+  width: auto;
+  min-height: 50px;
+  //margin: 0 auto;
 
   background-color: #826550;
 }
@@ -225,25 +225,33 @@
   }
 
   .main-nav__wrapper {
-    @include container();
-    @include clearfix();
+    //@include container();
+    @include container-fluid();
+    //@include clearfix();
+
+    display: flex;
+    justify-content: space-between;
   }
   .main-nav__toggle {
     display: none;
   }
 
   .main-nav__items {
-    float: left;
-    width: 570px;
+    //float: left;
+    //width: 570px;
     //min-height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
   }
   .main-nav__user-items {
-    float: right;
+    //float: right;
     width: 60px;
     //min-height: 70px;
   }
   .main-nav__item {
-    float: left;
+    //float: left;
     margin-right: 32px;
 
     &:last-child {
@@ -308,7 +316,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav__items {
-    width: 780px;
+    //width: 780px;
   }
   .main-nav__item {
     margin-right: 0;
